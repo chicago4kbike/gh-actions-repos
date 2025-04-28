@@ -1,11 +1,10 @@
-name: 02 workflow events
+name: 03-workflow
 
-on: 
-  workflow_dispatch
+on: workflow_dispatch
 
 jobs:
-  echo:
+  ubuntu-echo:
     runs-on: ubuntu-lastest
     steps:
-      - name: show the trigger
-        run: echo "i've been triggered by a(n) ${{github.event_name}}"
+      - name: show os
+        run: echo "This is ${{ runner.os }}"
