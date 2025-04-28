@@ -3,7 +3,7 @@ name: 02 workflow events
 on: 
   push
 
-  jobs:
+jobs:
   echo:
     runs-on: ubuntu-lastest
     steps:
